@@ -20,7 +20,15 @@ export default defineComponent({
                 },
                 series: [
                     {
-                        data: [120, 200, 150, 80, 70, 110, 130],
+                        data: [11, 44, 34, 54, 34, 23, 45],
+                        type: 'bar',
+                    },
+                    {
+                        data: [56, 23, 11, 80, 70, 56, 21],
+                        type: 'bar',
+                    },
+                    {
+                        data: [45, 43, 23, 45, 56, 76, 87],
                         type: 'bar',
                     },
                 ],

@@ -22,6 +22,7 @@ export default defineComponent({
                             backgroundColor: '#6a7985',
                         },
                     },
+                    triggerOn: 'click',
                 },
                 grid: {
                     left: '5%',
@@ -48,6 +49,10 @@ export default defineComponent({
                                     {offset: 1, color: '#F4F9FD'},
                                 ]),
                             },
+                        },
+                        label: {
+                            show: true,
+                            position: 'top',
                         },
                         itemStyle: {
                             normal: {
