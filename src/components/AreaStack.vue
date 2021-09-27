@@ -9,7 +9,7 @@ export default defineComponent({
     name: 'AreaStack',
     setup() {
         const initEcharts = () => {
-            const myChart = echarts.init(document.getElementById('areaStack'));
+            const myChart = echarts.init(document.getElementById('areaStack')!);
             const option = {
                 title: {
                     text: '堆叠区域图',

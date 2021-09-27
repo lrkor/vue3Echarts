@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, ref, onMounted} from 'vue';
+import {defineComponent, onMounted} from 'vue';
 import * as echarts from 'echarts';
 export default defineComponent({
     name: 'BarSimple',
     setup() {
         const initEcharts = () => {
-            const myChart = echarts.init(document.getElementById('barSimple'));
+            const myChart = echarts.init(document.getElementById('barSimple')!);
             const option = {
                 xAxis: {
                     type: 'category',

@@ -13,7 +13,7 @@ export default defineComponent({
         const data3 = [2.5, 2.8, 2.7, 2.8, 3.2, 2.8, 2.9];
 
         const initEcharts = () => {
-            const myChart = echarts.init(document.getElementById('WaterLevel'));
+            const myChart = echarts.init(document.getElementById('WaterLevel')!);
             const option = {
                 title: {
                     text: '水位图',
@@ -87,7 +87,7 @@ export default defineComponent({
                         label: {
                             show: true,
                             position: 'right',
-                            formatter: ({dataIndex}) => (data2.length === dataIndex + 1 ? '警戒水位' : ''),
+                            formatter: ({dataIndex}: any) => (data2.length === dataIndex + 1 ? '警戒水位' : ''),
                             color: '#FDBE76',
                         },
                         itemStyle: {
@@ -110,8 +110,7 @@ export default defineComponent({
                         label: {
                             show: true,
                             position: 'right',
-                            formatter: '{@score}米',
-                            formatter: ({dataIndex}) => (data2.length === dataIndex + 1 ? '保证水位' : ''),
+                            formatter: ({dataIndex}: any) => (data2.length === dataIndex + 1 ? '保证水位' : ''),
                             color: '#ff0000',
                         },
                         itemStyle: {
